@@ -1,13 +1,13 @@
 # Employee_tracker
-* Description *
+**Description**
 
 The objective of this application is to enable users to browse through employees, roles, and departments within a business. Additionally, the app offers functionality for creating new departments, roles, and employees.
 
-* Usage *
+**Usage**
 
 This terminal-based application operates exclusively within the terminal environment. By running the command node index.js, users can initialize the app, prompting a menu of multiple selections. These selections are crafted using the Inquirer npm package, seamlessly integrated with MySQL to facilitate the functionality for viewing and modifying various tables of information.
 
-* Conclusion *
+**Conclusion**
 
 Enhanced Understanding of MySQL and Database Structure: Through working on this project, I deepened my comprehension of MySQL and gained insights into database structuring, which is crucial for effective data management and retrieval.
 
@@ -17,6 +17,11 @@ Creation of Seed Database: I successfully developed a seed database that users c
 
 Strengthened Understanding of Inquirer: Working extensively with the Inquirer npm package has allowed me to strengthen my understanding of its functionalities and capabilities. This has enabled me to create a more user-friendly and interactive experience within the terminal application.
 
+
+**Links**
+
+https://github.com/Fderosier/Employee_tracker.git
+https://drive.google.com/file/d/1VPfRvMYc_KqgiZ-HjhPHeZCljo5Ro96u/view
 
 
 
