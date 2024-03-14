@@ -1,34 +1,47 @@
-USE employee_tracker_db;
+use employee_db
+-- This uses the employee_db characteristics defined in the schema file to outline the rules associated with each value type
 
--- DEPARTMENT DATA 
+-- depts
 INSERT INTO department (name)
-VALUES 
-("Sales"),
-("IT"), 
-("Finance"),
-("Legal");
+VALUES ('Residential Design'),
+('Commercial Design'),
+('Construction'),
+('Interior Design');
 
--- EMPLOYEE ROLE DATA 
-INSERT INTO role (title, salary, department_id) 
-VALUES 
-("Sales Lead", 100000.000, 1), 
-("Salesperson", 800000.000, 1), 
-("Lead Software Engineer", 150000.000, 2),
-("Software Engineer", 120000.000, 2),
-("Account Manager", 125000.000, 3), 
-("Accountant", 250000.000, 3),
-("Legal Team Lead", 190000.000, 4),
-("Accounts Lawyers", 150000.000, 4);
+-- roles
+INSERT INTO role (title, salary, department_id)
+VALUES ('Residential Senior Architect', 125000, 1),
+('Residential Junior Architect', 100000, 1),
+('Residential Designer', 65000, 1),
+('Commercial Senior Architect', 135000, 2),
+('Commercial Junior Architect', 110000, 2),
+('Commercial Designer', 70000, 2),
+('Construction Manager', 130000, 3),
+('Journeyman', 80000, 3),
+('Electrician', 80000, 3),
+('Plumber', 80000, 3),
+('Framer', 60000, 3),
+('Painter', 60000, 3),
+('General Laborer', 45000, 3),
+('Senior Interior Designer', 75000, 4),
+('Junior Interior Designer', 55000, 4),
+('Designer', 45000, 4);
 
--- EMPLOYEE DATA
+-- employees
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES 
-("John", "Doe", 3, NULL),
-("Mike", "Kelly", 4, NULL),
-("Katelyn", "Rodriguez", 3, NULL), 
-("Esher", "Tupik", 2, NULL), 
-("Quinton", "Brown", 2, NULL), 
-("Elizabeth", "Casey", 1, NULL), 
-("Tom", "Alen", 4, NULL), 
-("Christian", "Dragon", 2, NULL),
-("Jackson", "Smithfield", 1, NULL);
+VALUES ("Frank", "Gehry",  1, NULL),
+("Zaha", "Hadid", 2, 1),
+("Frank", "Wright", 3, 1),
+("Antoni", "Gaudi", 4, NULL),
+("Louis", "Sullivan", 5, 4),
+("Adrian", "Smith", 6, 4),
+("Kazuyo", "Sejima", 7, NULL),
+("Miles", "Van Der Rohe", 8, 7),
+("Jeanne", "Gang", 9, 7),
+("Norman", "Foster", 10, 7),
+("Philip", "Johnson", 11, 7),
+("Amanda", "Levete", 12, 7),
+("Gabriela", "Carillo", 13, 7),
+("Maya", "Lin", 14, NULL),
+("Tadao", "Ando", 15, 14),
+("Renzo", "Piano", 16, 14);
